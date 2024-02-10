@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon/components';
+const { title, icon, day, date, time, place, description, map, link, address } = Astro.props;
+---
+
+<div class="flex flex-col items-center border-2 border-light_blue mt-10 p-2 shadow-xl">
+  <div class="p-5 border border-light_blue w-full">
+    <div class="text-center">
+      <div class="text-strong_blue font-subtitle text-3xl">{title}</div>
+      <img class="mx-auto mt-1 mb-3 max-w-64" src="/src/assets/images/flowers_line.png"/>
+      <div class="text-4xl text-platinum font-main">{date}</div>
+
+      <div class="text-sand inline-block mt-5 rounded-full">
+        <Icon name={icon} size={40} />
+      </div>
+      <div class="text-md text-platinum mx-auto mb-2">
+        {
+        link
+        ?
+          <a href={link} target="_blank" class="hover:text-light_blue">
+            {place}
+          </a>
+        :
+          <p>{place}</p>
+        }
+      </div>
+      <div class="text-xs text-strong_blue mt-2">
+        { description }
+      </div>
+    </div>
+    <div class="flex flex-col py-3 px-2 items-center justify-center mt-5">
+      <div class="center text-sand">
+        <Icon name="location" size={20}/>
+      </div>
+      <div class="text-xxs text-center text-platinum mt-2">{address}</div>
+      <a href={map} target="_blank" class="border rounded-full border-sand bg-sand text-perl font-body text-sm p-2 mt-3 hover:bg-perl hover:text-sand">
+        Ir al mapa
+      </a>
+    </div>
+  </div>
+</div>

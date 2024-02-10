@@ -1,0 +1,30 @@
+---
+import { Icon } from 'astro-icon/components';
+import Item from '../components/Item.astro';
+---
+
+<div class="container">
+  <h1 class="text-4xl text-beige font-title text-center mt-16 mb-8">¿Dónde y Cuándo?</h1>
+  <Item
+    title="Ceremonia Religiosa"
+    icon="iglesia"
+    day="Sábado"
+    date="19 de Octubre de 2024"
+    time="14:00 Hrs"
+    location="Iglesia de San Judas Tadeo"
+    address="Av del Mero 55, Sábalo Country, 82100 Mazatlán, Sin."
+    map="https://maps.app.goo.gl/EAezMzaJjQqoxLsa9"
+  />
+
+  <Item
+    title="Recepción"
+    icon="hotel"
+    day="Sábado"
+    date="19 de Octubre de 2024"
+    time="16:00 Hrs"
+    location="Hotel Diamond Bay"
+    link="https://dbresort.mx/"
+    address="Avenida Ernesto Coppel Campaña 725 Zona Nuevo, Av. Ernesto Coppel Campaña 725, Cerritos, 82100 Mazatlán, Sin."
+    map="https://maps.app.goo.gl/RUt8a2qjwJX12ZKV7"
+  />
+</div>

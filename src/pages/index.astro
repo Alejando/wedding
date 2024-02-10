@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Double from '../components/Double.astro';
+import Countdown from '../components/Countdown.jsx';
+import WhereAndWhen from '../components/WhereAndWhen.astro';
+import Schedule from '../components/Schedule.astro';
+import Confirmations from '../components/Confirmations.astro';
+import Gifts from '../components/Gifts.astro';
+import DressCode from '../components/DressCode.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Isis & Alex">
+	<main class="relative">
+		<Header/>
+		<Hero/>
+		<Double/>
+		<Countdown client:load/>
+		<!-- <WhereAndWhen/> -->
+		<Schedule/>
+		<Gifts/>
+		<DressCode/>
+		<Confirmations/>
+		<Footer/>
+	</main>
+</Layout>
