@@ -1,11 +1,13 @@
 ---
 import Event from "./Event.astro"
+import line from '/src/assets/images/line_blue.png';
 ---
 
 <div id="itinerario" class=" bg-perl px-8 py-16">
-  <h1 class="text-6xl text-sand font-titles text-center">Itinerario</h1>
-  <!-- <img class="mx-auto max-w-72" src="/src/assets/images/flowers_line.png"/> -->
-  <Event
+  <h1 class="text-6xl text-striong_brown font-titles text-center">Itinerario</h1>
+  <img alt="separador" class="mx-auto mt-1 mb-8 max-w-64" src={line.src}/>
+  <div class="flex  flex-row flex-wrap gap-10 justify-center">
+    <Event
     title="Rompehielo"
     icon="hielo"
     day="Viernes",
@@ -28,14 +30,6 @@ import Event from "./Event.astro"
     address="Av del Mero 55, Sábalo Country, 82100 Mazatlán, Sin."
     map="https://maps.app.goo.gl/EAezMzaJjQqoxLsa9"
   />
-  <!-- <Event
-    title="Coctel de Bienvenida"
-    icon="cocteles"
-    day="Sábado",
-    date="19 de Octubre de 2024"
-    time="15:30 hrs"
-    place="Jardin del Hotel"
-  /> -->
   <Event
     title="Ceremonia Simbólica"
     icon="arco"
@@ -60,4 +54,6 @@ import Event from "./Event.astro"
     address="Av. Ernesto Coppel Campaña 725, Cerritos, 82100 Mazatlán, Sin."
     map="https://maps.app.goo.gl/YtSZAffj4jnhN65e8"
   />
+  </div>
+
 </div>

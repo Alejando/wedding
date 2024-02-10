@@ -1,6 +1,7 @@
 // Countdown.jsx
 import { useState, useEffect } from 'preact/hooks';
 import TimeBox from './TimeBox.jsx';
+import line from '/src/assets/images/line_perl.png';
 
 
 const Countdown = () => {
@@ -38,21 +39,22 @@ const Countdown = () => {
 
   return (
     // <div class="text-center min-h-96 bg-strong_beige py-16 px-8">
-    <div id="cuenta_regresiva" class="bg-cover bg-center h-176 bg-[url('/src/assets/images/kiss.jpg')]">
+    <div id="cuenta_regresiva" class="bg-cover bg-center bg-[url('/src/assets/images/kiss.jpg')]">
       <div class="text-center min-h-96 py-16 px-8 h-full bg-black bg-opacity-50">
-        <h2 class="text-6xl font-titles text-light_blue mb-4">¡Ya falta poco!</h2>
-        <p class="text-platinum mt-20" >Nuestra boda es en:</p>
-        <div class="grid grid-cols-2 gap-4 place-content-center mt-4">
+        <h2 class="text-6xl font-titles text-light_blue">¡Ya falta poco!</h2>
+        <img alt="separador" class="mx-auto mt-1 mb-16 max-w-64" src={line.src}/>
+        <p class="text-perl mt-24" >Nuestra boda es en:</p>
+        <div class="grid grid-cols-2 gap-4 place-content-center mt-4 max-w-96 mx-auto">
           <TimeBox time={days} label="Días" />
           <TimeBox time={hours} label="Horas" />
           <TimeBox time={minutes} label="Minutos" />
           <TimeBox time={seconds} label="Segundos" />
         </div>
         <div>
-          <p class="text-xs text-platinum mt-5" >Por favor confirma tu asistencia a la brevedad posible.</p>
+          <p class=" text-perl mt-5 md:mt-10" >Por favor confirma tu asistencia a la brevedad posible.</p>
         </div>
-        <div class="mt-16">
-          <a href="#confirmacion" class="border rounded-full border-perl text-perl font-body text-2xl px-10 py-4 hover:text-light_blue  hover:border-light_blue ">Confirmar</a>
+        <div class="mt-10">
+          <a href="#confirmacion" class="border rounded-full border-perl text-perl font-body text-2xl px-10 py-4 hover:bg-platinum/60 ">Confirmar</a>
         </div>
       </div>
     </div>

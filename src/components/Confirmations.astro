@@ -1,39 +1,38 @@
 ---
 import { Icon } from 'astro-icon/components';
 import ConfirmationButton from './ConfirmationButton.astro';
+import line from '/src/assets/images/line_perl.png';
 ---
 
-<div id="confirmacion" class="text-center bg-beige px-8 py-16">
-  <h1 class="text-5xl text-sand font-titles text-center">Confirma tu Asistencia...</h1>
-  <img class="mx-auto mt-1 mb-16 max-w-64" src="/src/assets/images/flowers_line.png"/>
-  <div class="flex flex-col-reverse items-center ">
-    <div class="flex-initial md:w-full">
-      <div class="md:w-8/12 text-center md:mx-auto">
-        <p class=" text-strong_blue text-sm">¡Esperamos con entusiasmo contar con ustedes en nuestra boda!</p>
-        <div class="text-sand inline-block mt-8">
-          <Icon name="whatsapp" size={30} />
-        </div>
-        <div class="flex flex-col">
-          <div class="flex-initial w-full p-4">
-            <ConfirmationButton
-            number="523751086335"
-            message="¡Hola! Confirmo mi asistencia a tu boda. ¡Nos vemos pronto!"
-            buttonMessage="Invitado de Isis"
-            />
+<div id="confirmacion" class="text-center bg-cover bg-center  bg-[url('/src/assets/images/cielo.jpg')]">
+  <div class="text-center py-16 px-8 min-h-176 bg-black bg-opacity-50">
+    <h1 class="text-5xl text-light_blue font-titles text-center">Confirma tu Asistencia...</h1>
+    <img alt="separador" class="mx-auto mt-1 mb-16 max-w-64" src={line.src}/>
+    <div class="flex flex-col-reverse items-center ">
+      <div class="flex-initial md:w-full">
+        <div class="md:w-8/12 text-center md:mx-auto md:mt-16 lg:mt-32">
+          <p class="text-xl text-perl">¡Esperamos con entusiasmo contar con ustedes en nuestra boda!</p>
+          <div class="text-perl inline-block mt-8">
+            <Icon name="whatsapp" size={30} />
           </div>
-          <div class="flex-initial w-full p-4">
-            <ConfirmationButton
-              number="524921414724"
+          <div class="flex flex-col">
+            <div class="flex-initial w-full p-4">
+              <ConfirmationButton
+              number="523751086335"
               message="¡Hola! Confirmo mi asistencia a tu boda. ¡Nos vemos pronto!"
-              buttonMessage="Invitado de Alex"
-            />
+              buttonMessage="Invitado de Isis"
+              />
+            </div>
+            <div class="flex-initial w-full p-4">
+              <ConfirmationButton
+                number="524921414724"
+                message="¡Hola! Confirmo mi asistencia a tu boda. ¡Nos vemos pronto!"
+                buttonMessage="Invitado de Alex"
+              />
+            </div>
           </div>
+          <p class="text-beige mt-16">Por favor confirma tu asistencia a la brevedad posible.</p>
         </div>
-        <p class="text-xs text-platinum mt-8">Por favor confirma tu asistencia a la brevedad posible.</p>
-      </div>
-    </div>
-    <div class="flex-initial w-full mb-4">
-      <div class="relative bg-cover bg-center min-h-80 bg-[url('/src/assets/images/nala.jpg')]">
       </div>
     </div>
   </div>

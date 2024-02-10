@@ -1,13 +1,14 @@
 ---
 import { Icon } from 'astro-icon/components';
 const { title, icon, day, date, time, place, description, map, link, address } = Astro.props;
+import line from '/src/assets/images/line_beige.png';
 ---
 
-<div class="flex flex-col items-center border-2 border-light_blue mt-10 p-2 shadow-xl">
-  <div class="p-5 border border-light_blue w-full">
+<div class="basis-1 lex flex-col items-center border-2 border-light_blue mt-10 p-2 shadow-xl">
+  <div class="p-5 border border-light_blue w-full h-full">
     <div class="text-center">
       <div class="text-strong_blue font-subtitle text-3xl">{title}</div>
-      <img class="mx-auto mt-1 mb-3 max-w-64" src="/src/assets/images/flowers_line.png"/>
+      <img alt="separador" class="mx-auto mt-1 mb-3 max-w-64" src={line.src}/>
       <div class="text-4xl text-platinum font-main">{date}</div>
 
       <div class="text-sand inline-block mt-5 rounded-full">
@@ -33,7 +34,7 @@ const { title, icon, day, date, time, place, description, map, link, address } =
         <Icon name="location" size={20}/>
       </div>
       <div class="text-xxs text-center text-platinum mt-2">{address}</div>
-      <a href={map} target="_blank" class="border rounded-full border-sand bg-sand text-perl font-body text-sm p-2 mt-3 hover:bg-perl hover:text-sand">
+      <a href={map} target="_blank" class="border rounded-full border-platinum text-platinum font-body text-sm p-2 mt-3 hover:bg-platinum/10">
         Ir al mapa
       </a>
     </div>

@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+import line from '/src/assets/images/line_blue.png';
 ---
 
 <div id="bienvenida" class=" bg-perl md:p-16 px-8 py-16">
@@ -8,13 +8,13 @@ import { Icon } from 'astro-icon/components';
       <div class="md:w-8/12 text-center md:mx-auto">
         <p class=" text-strong_blue text-body text-sm">Creamos juntos la promesa de un futuro lleno de aventuras, complicidad y felicidad compartida. Estamos felices de celebrar con ustedes este  capítulo único en nuestras vidas.
         </p>
-        <img class="mx-auto mt-4 " src="/src/assets/images/flowers_line.png" alt="">
+        <img alt="separador" class="mx-auto mt-4 " src={line.src} alt="">
         <div class="text-4xl text-platinum font-wedding my-8">19 . Octubre . 2024</div>
-        <div class="text-xl text-light_blue mb-8 font-body">Mazatlán, Sin.</div>
+        <div class="text-xl text-strong_blue_blue mb-8 font-body">Mazatlán, Sin.</div>
       </div>
     </div>
     <div class="flex-initial w-full">
-      <div class="relative px-1 bg-cover bg-center min-h-128 bg-[url('/src/assets/images/perfil.jpg')]"></div>
+      <div class="relative px-1 bg-cover bg-center min-h-128 bg-[url('/src/assets/images/perfil.png')]"></div>
     </div>
   </div>
 </div>

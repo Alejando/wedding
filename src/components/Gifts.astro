@@ -1,27 +1,31 @@
 ---
 import { Icon } from 'astro-icon/components';
+import line from '/src/assets/images/line_perl.png';
 ---
 
-<div id="mesa_de_regalos" class="bg-cover h-176 bg-[url('/src/assets/images/paris_1.jpg')]">
+<div id="mesa_de_regalos" class="bg-cover bg-center min-h-176 bg-[url('/src/assets/images/paris_2.png')]">
   <div class="text-center min-h-96 py-16 px-8 h-full bg-black bg-opacity-70">
-    <h2 class="text-5xl font-titles text-light_blue mb-24">Mesa de regalos</h2>
-    <div class="text-strong_beige inline-block mb-16">
+    <h2 class="text-5xl font-titles text-light_blue ">Mesa de regalos</h2>
+    <img alt="separador" class="mx-auto mt-1 mb-24 max-w-64" src={line.src}/>
+    <div class="text-strong_beige inline-block mb-8">
       <Icon name="envelope" size={40} />
     </div>
-    <p class="text-strong_beige text-sm">El mejor regalo es tu presencia, pero si deseas hacernos un obsequio a continuación te dejamos algunas opciones:</p>
-    <div class="flex flex-row justify-between mt-16">
-      <div class="flex-initial w-full border border-perl m-1 p-3">
+    <div class="flex justify-center">
+      <p class="text-strong_beige text-sm max-w-80">El mejor regalo es tu presencia, pero si deseas hacernos un obsequio a continuación te dejamos algunas opciones:</p>
+    </div>
+    <div class="flex flex-row gap-2 md:gap-10 justify-center mt-16">
+      <div class="min-w-32 md:min-w-36 basis-1 border border-perl m-1 p-3">
         <div class="text-perl text-2xl font-main my-3">Lluvia de Sobres</div>
-        <div class="text-xxs text-platinum">
+        <p class="text-xs text-beige">
           Tradición de regalar dinero en efectivo el día del evento
-        </div>
+        </p>
       </div>
-      <div class="flex-initial w-full border border-perl m-1 p-4">
+      <div class="min-w-32 md:min-w-36 basis-1 border border-perl m-1 p-4">
         <div class="text-perl text-2xl font-main my-3">Amazon</div>
-        <div class="text-xxs text-platinum mb-4">
-          Código: 123456
-        </div>
-        <a href="https://www.amazon.com.mx/wedding/registry/123456" class="text-xxs text-platinum border border-platinum rounded-full p-2 mt-4 hover:bg-platinum hover:text-perl">
+        <p class="text-xs text-beige mb-4">
+          Código: isisyalex
+        </p>
+        <a href="https://www.amazon.com.mx/wedding/share/isisyalex" class="text-xs text-beige border border-beige rounded-full p-2 mt-4 hover:bg-platinum/60 ">
           Ver regalos
         </a>
       </div>

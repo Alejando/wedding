@@ -1,18 +1,22 @@
 <header class="sticky bg-beige shadow-md">
   <nav class="container mx-auto px-6 py-3">
       <div class="flex justify-between items-center">
-          <a href="#" class="text-4xl font-main tracking-tighter text-strong_blue">I & A</a>
-          <div class="hidden md:flex items-center">
+          <a href="#inicio" class="min-w-28 text-4xl font-wedding tracking-tighter text-strong_blue">
+            <i class="text-4xl">I</i>
+            <i class="text-xl">&</i>
+            <i class="text-4xl">A</i>
+          </a>
+          <div class="hidden lg:flex items-center">
               <a href="#bienvenida" class="text-lg mx-5 my-5 text-strong_blue hover:underline">¡Bienvenida!</a>
               <a href="#cuenta_regresiva" class="text-lg mx-5 my-5 text-strong_blue hover:underline">Cuenta Regresiva</a>
-              <a href="#itinerario" class="text-lg mx-5 my-5  text-strong_bluehover:underline">Itenerario</a>
+              <a href="#itinerario" class="text-lg mx-5 my-5  text-strong_blue hover:underline">Itenerario</a>
               <a href="#mesa_de_regalos" class="text-lg mx-5 my-5 text-strong_blue hover:underline">Mesa de regalos</a>
               <a href="#vestimenta" class="text-lg mx-5 my-5 text-strong_blue hover:underline">Código de Vestimenta</a>
               <a href="#confirmacion" class="text-lg mx-5 my-5 text-strong_blue hover:underline">Confirmación</a>
           </div>
           <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-              <button type="button" onclick="toggleMobileMenu()">
+          <div class="lg:hidden flex items-center">
+              <button type="button" id="button" aria-label="open menu" onclick="toggleMobileMenu()">
                   <svg class="w-6 h-6 text-strong_blue" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M4 6h16M4 12h16M4 18h16"></path>
                   </svg>
@@ -21,13 +25,13 @@
       </div>
   </nav>
   <!-- Mobile Menu -->
-  <div class="hidden md:hidden" id="mobileMenu">
-      <a href="#bienvenida" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">¡Bienvenida!</a>
-      <a href="#cuenta_regresiva" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">Cuenta Regresiva</a>
-      <a href="#itinerario" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">Itenerario</a>
-      <a href="#mesa_de_regalos" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">Mesa de regalos</a>
-      <a href="#vestimenta" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">Código de Vestimenta</a>
-      <a href="#confirmacion" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum">Confirmación</a>
+  <div class="hidden lg:hidden" id="mobileMenu">
+      <a href="#bienvenida" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">¡Bienvenida!</a>
+      <a href="#cuenta_regresiva" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">Cuenta Regresiva</a>
+      <a href="#itinerario" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">Itenerario</a>
+      <a href="#mesa_de_regalos" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">Mesa de regalos</a>
+      <a href="#vestimenta" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">Código de Vestimenta</a>
+      <a href="#confirmacion" class="block py-2 px-4 text-sm text-strong_blue hover:bg-platinum" onclick="toggleMobileMenu()">Confirmación</a>
     </div>
 </header>
 
