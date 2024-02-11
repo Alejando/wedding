@@ -8,5 +8,6 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [tailwind(), preact(), icon()],
   site: 'https://alejando.github.io',
-  base: '/wedding'
+  base: '/wedding',
+  site: 'https://isisyalex.com'
 });
