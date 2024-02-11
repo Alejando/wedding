@@ -8,17 +8,32 @@ import '@fontsource-variable/dancing-script';
 import '@fontsource/great-vibes';
 import '@fontsource/poppins';
 import '@fontsource-variable/lexend';
+import '@fontsource-variable/lexend-deca';
+import paris from '/src/assets/images/paris_2.png';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<!-- Primary Meta Tags -->
+		<title>Isis & Alex - 19 de Octubre de 2024</title>
+		<meta name="title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta name="description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://isisyalex.com" />
+		<meta property="og:title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta property="og:description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+		<meta property="og:image" content={ paris.src } />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://isisyalex.com" />
+		<meta property="twitter:title" content="Isis & Alex - 19 de Octubre de 2024" />
+		<meta property="twitter:description" content="Únete a nuestra boda el 19 de octubre de 2024 en una romántica ceremonia.  ¡Explora nuestro sitio para más información y para acompañarnos en este viaje hacia el día más feliz de nuestras vidas" />
+		<meta property="twitter:image" content={ paris.src } />
 	</head>
 	<body>
 		<slot />
