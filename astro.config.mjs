@@ -6,5 +6,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), preact(), icon()]
+  integrations: [tailwind(), preact(), icon()],
+  site: 'https://alejando.github.io',
+  base: '/wedding'
 });
