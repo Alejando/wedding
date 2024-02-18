@@ -3,6 +3,10 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			backgroundPosition: {
+				'bottom-24': 'center bottom 24%',
+				'top-23': 'center top 23%',
+			},
 			fontSize: {
 				xxs: '0.6rem',
 			},

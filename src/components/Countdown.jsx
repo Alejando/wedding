@@ -39,8 +39,8 @@ const Countdown = () => {
 
   return (
     // <div class="text-center min-h-96 bg-strong_beige py-16 px-8">
-    <div id="cuenta_regresiva" class="bg-cover bg-center bg-[url('/src/assets/images/kiss.jpg')]">
-      <div class="text-center min-h-96 py-16 px-8 h-full bg-black bg-opacity-50">
+    <div id="cuenta_regresiva" class="bg-cover bg-center xl:bg-bottom-24 bg-[url('/src/assets/images/kiss.jpg')]">
+      <div class="text-center min-h-96 py-32 px-8 h-full bg-black bg-opacity-50">
         <h2 class="text-6xl font-titles text-light_blue">¡Ya falta poco!</h2>
         <img alt="separador" class="mx-auto mt-1 mb-16 max-w-64" src={line.src}/>
         <p class="text-perl mt-24" >Nuestra boda es en:</p>
