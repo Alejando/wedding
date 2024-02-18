@@ -54,7 +54,13 @@ const Countdown = () => {
           <p class=" text-perl mt-5 md:mt-10" >Por favor confirma tu asistencia a la brevedad posible.</p>
         </div>
         <div class="mt-10">
-          <a href="#confirmacion" class="border rounded-full border-perl text-perl font-body text-2xl px-10 py-4 hover:bg-platinum/60 ">Confirmar</a>
+          <a
+            href="https://forms.gle/TskYWyJ335dZ4ySf6"
+            target="_blank"
+            class="border rounded-full border-perl text-perl font-body text-2xl px-10 py-4 hover:bg-platinum/60 "
+          >
+            Confirmar
+          </a>
         </div>
       </div>
     </div>
