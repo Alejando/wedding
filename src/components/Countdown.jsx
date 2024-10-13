@@ -6,7 +6,7 @@ import line from '/src/assets/images/line_perl.png';
 
 const Countdown = () => {
   const calculateTimeLeft = () => {
-    const countDownDate = new Date("2024-10-19").getTime();
+    const countDownDate = new Date("2024-10-19T12:00:00").getTime();
     const now = new Date().getTime();
     const distance = countDownDate - now;
     return distance;
@@ -51,15 +51,14 @@ const Countdown = () => {
           <TimeBox time={seconds} label="Segundos" />
         </div>
         <div>
-          <p class=" text-perl mt-5 md:mt-10" >Por favor confirma tu asistencia a la brevedad posible.</p>
+          <p class=" text-perl mt-5 md:mt-10" >No olvides subir sus recuerdos para compartir con nosotros</p>
         </div>
         <div class="mt-10">
           <a
-            href="https://forms.gle/TskYWyJ335dZ4ySf6"
-            target="_blank"
+            href="#recuerdos"
             class="border rounded-full border-perl text-perl font-body text-2xl px-10 py-4 hover:bg-platinum/60 "
           >
-            Confirmar
+            Subir fotos y videos
           </a>
         </div>
       </div>
